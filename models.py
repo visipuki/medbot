@@ -8,6 +8,7 @@ class Tablet:
 
 @dataclass
 class Notification:
-    time: str           # HH:MM формат
-    tablets: List[Tablet] = field(default_factory=list)
+    id: int = None               # для БД, автоинкремент
+    time: str = ""
     enabled: bool = True
+    tablets: List[Tablet] = field(default_factory=list)

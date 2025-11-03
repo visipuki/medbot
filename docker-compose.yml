@@ -10,4 +10,4 @@ services:
       - ./migrations:/app/migrations
     environment:
       - TZ=Europe/Moscow
-      - TELEGRAM_BOT_TOKEN=ваш_токен
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}

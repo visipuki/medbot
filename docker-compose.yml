@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  medbot:
+    build: .
+    container_name: medbot
+    restart: always
+    volumes:
+      - ./medication_bot.db:/app/medication_bot.db
+      - ./migrations:/app/migrations
+    environment:
+      - TZ=Europe/Moscow
+      - TELEGRAM_BOT_TOKEN=ваш_токен

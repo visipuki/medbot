@@ -1,2 +1,2 @@
 # medbot
-telegram medicine notification bot
+telegram medicine taking notification bot

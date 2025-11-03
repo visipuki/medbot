@@ -1,6 +1,7 @@
 import os
 import logging
 from aiogram import Bot, Dispatcher, executor, types
+from handlers import register_handlers
 
 # Получение токена бота из переменных окружения
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
